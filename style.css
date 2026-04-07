@@ -109,7 +109,22 @@ input, textarea {
 .btn-submit:hover {
     background: #16a085;
 }
+.hours {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+}
 
+.hours p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.hours strong {
+    color: #2c3e50;
+}
 /* Contact Info */
 #contact p {
     margin: 10px 0;
