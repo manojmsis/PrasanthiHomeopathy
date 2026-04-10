@@ -197,6 +197,14 @@ input, textarea {
     .whatsapp-float:hover .tooltip {
       opacity: 1;
     }
+.btn-call {
+  background: #1abc9c;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
 /* Contact Info */
 #contact p {
     margin: 10px 0;
