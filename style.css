@@ -4,24 +4,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background: #f5f7fb;
     color: #333;
+    margin-top: 80px; /* adjust if needed */
 }
 
 /* Navbar */
- .navbar {
+.navbar {
     position: fixed;
+    top: 0;              /* IMPORTANT */
+    left: 0;             /* IMPORTANT */
+    width: 100%;         /* IMPORTANT */
     background: #2c3e50;
     padding: 15px;
     display: flex;
     justify-content: center;
     gap: 30px;
     z-index: 1000;
-} 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
 
 .navbar a {
     color: white;
@@ -56,6 +64,7 @@ section {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
+    scroll-margin-top: 90px;
 }
 
 h2 {
