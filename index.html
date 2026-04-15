@@ -11,78 +11,121 @@
 
     <meta name="keywords" content="homeopathy clinic Hyderabad, homeopathy doctor Hyderabad, hair fall treatment, skin allergy treatment, PCOD treatment, asthma homeopathy, Prashanthi clinic, best homeopathy doctor near me">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Language Switching Logic */
+        .lang-te { display: none; }
+        body.te .lang-te { display: inline-block; }
+        body.te .lang-en { display: none; }
+        
+        body.en #btn-en { display: none; }
+        body.te #btn-te { display: none; }
+
+        /* Navbar Language Toggle Styling */
+        .lang-toggle {
+            float: right;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .lang-toggle button {
+            padding: 5px 12px;
+            margin-left: 5px;
+            cursor: pointer;
+            border: 1px solid #fff;
+            background: transparent;
+            color: white;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .lang-toggle button.active {
+            background: white;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body>
+<body class="en">
     <!-- Navigation Bar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="#treatments">Treatments</a> 
+        <a href="#faq">FAQ</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
+        <div class="lang-toggle">
+            <button id="btn-en" class="active" onclick="setLanguage('en')">English</button>
+            <button id="btn-te" onclick="setLanguage('te')">తెలుగు</button>
+        </div>
     </div>
 
    <header>
     <h1>
-        Welcome to Prashanthi Homeopathy Clinic <br>
-        ప్రశాంతి హోమియోపతి క్లినిక్‌కు స్వాగతం
+        <span class="lang-en">Welcome to Prashanthi Homeopathy Clinic</span>
+        <span class="lang-te">ప్రశాంతి హోమియోపతి క్లినిక్‌కు స్వాగతం</span>
     </h1>
 
     <div>
         <h4>
-            At our clinic, we are dedicated to providing compassionate, high-quality consulting for individuals and families. Rooted in the principles of classical homeopathy, we have been passionate about the pursuit of health and healing since 2006. Dr. Prasanthi combines nearly two decades of clinical mastery with personal insight to offer gentle, effective health solutions.
-            <br><br>
-            మా క్లినిక్‌లో ఉన్నతమైన హోమియోపతి సేవలను అందించడంలో మేము కట్టుబడి ఉన్నాము. 2006 నుండి క్లాసికల్ హోమియోపతి సిద్ధాంతాలపై ఆధారపడి, ఆరోగ్యం మరియు చికిత్సలో మేము విశ్వసనీయ సేవలను అందిస్తున్నాము. డాక్టర్ ప్రశాంతి గారు దాదాపు రెండు దశాబ్దాల అనుభవంతో, వ్యక్తిగత శ్రద్ధతో, సున్నితమైన మరియు ప్రభావవంతమైన చికిత్సలను అందిస్తున్నారు.
+            <span class="lang-en">At our clinic, we are dedicated to providing compassionate, high-quality consulting for individuals and families. Rooted in the principles of classical homeopathy, we have been passionate about the pursuit of health and healing since 2006. Dr. Prasanthi combines nearly two decades of clinical mastery with personal insight to offer gentle, effective health solutions.</span>
+            <span class="lang-te">మా క్లినిక్‌లో ఉన్నతమైన హోమియోపతి సేవలను అందించడంలో మేము కట్టుబడి ఉన్నాము. 2006 నుండి క్లాసికల్ హోమియోపతి సిద్ధాంతాలపై ఆధారపడి, ఆరోగ్యం మరియు చికిత్సలో మేము విశ్వసనీయ సేవలను అందిస్తున్నాము. డాక్టర్ ప్రశాంతి గారు దాదాపు రెండు దశాబ్దాల అనుభవంతో, వ్యక్తిగత శ్రద్ధతో, సున్నితమైన మరియు ప్రభావవంతమైన చికిత్సలను అందిస్తున్నారు.</span>
         </h4>
     </div>
 </header>
 <section id="treatments" class="treatments">
-  <h2>Our Treatments / మా చికిత్సలు</h2>
+  <h2>
+    <span class="lang-en">Our Treatments</span>
+    <span class="lang-te">మా చికిత్సలు</span>
+  </h2>
   <p class="treatment-subtext">
-    We provide safe, natural and effective homeopathic treatments for various conditions. <br>
-    మేము అనేక రకాల వ్యాధులకు సురక్షితమైన, సహజమైన హోమియోపతి చికిత్సలను అందిస్తున్నాము.
+    <span class="lang-en">We provide safe, natural and effective homeopathic treatments for various conditions.</span>
+    <span class="lang-te">మేము అనేక రకాల వ్యాధులకు సురక్షితమైన, సహజమైన హోమియోపతి చికిత్సలను అందిస్తున్నాము.</span>
   </p>
 
   <div class="treatment-grid">
 
-    <div class="treatment-item">Cold, Cough & Fever<br><small>జలుబు, దగ్గు, జ్వరం</small></div>
-    <div class="treatment-item">Sinusitis & Polyps<br><small>సైనసైటిస్ & పాలిప్స్</small></div>
-    <div class="treatment-item">Tonsils<br><small>టాన్సిల్స్</small></div>
-    <div class="treatment-item">Allergies<br><small>అలర్జీలు</small></div>
+    <div class="treatment-item"><span class="lang-en">Cold, Cough & Fever</span><span class="lang-te">జలుబు, దగ్గు, జ్వరం</span></div>
+    <div class="treatment-item"><span class="lang-en">Sinusitis & Polyps</span><span class="lang-te">సైనసైటిస్ & పాలిప్స్</span></div>
+    <div class="treatment-item"><span class="lang-en">Tonsils</span><span class="lang-te">టాన్సిల్స్</span></div>
+    <div class="treatment-item"><span class="lang-en">Allergies</span><span class="lang-te">అలర్జీలు</span></div>
 
-    <div class="treatment-item">Back Pain<br><small>వెన్నునొప్పి</small></div>
-    <div class="treatment-item">Neck Pain<br><small>మెడ నొప్పి</small></div>
-    <div class="treatment-item">Joint Pains (Arthritis)<br><small>కీళ్ల నొప్పులు</small></div>
-    <div class="treatment-item">Sciatica Pain<br><small>సయాటికా నొప్పి</small></div>
+    <div class="treatment-item"><span class="lang-en">Back Pain</span><span class="lang-te">వెన్నునొప్పి</span></div>
+    <div class="treatment-item"><span class="lang-en">Neck Pain</span><span class="lang-te">మెడ నొప్పి</span></div>
+    <div class="treatment-item"><span class="lang-en">Joint Pains (Arthritis)</span><span class="lang-te">కీళ్ల నొప్పులు</span></div>
+    <div class="treatment-item"><span class="lang-en">Sciatica Pain</span><span class="lang-te">సయాటికా నొప్పి</span></div>
 
-    <div class="treatment-item">Hair Fall<br><small>జుట్టు రాలడం</small></div>
-    <div class="treatment-item">Pimples & Skin Problems<br><small>మొటిమలు & చర్మ సమస్యలు</small></div>
+    <div class="treatment-item"><span class="lang-en">Hair Fall</span><span class="lang-te">జుట్టు రాలడం</span></div>
+    <div class="treatment-item"><span class="lang-en">Pimples & Skin Problems</span><span class="lang-te">మొటిమలు & చర్మ సమస్యలు</span></div>
 
-    <div class="treatment-item">Constipation<br><small>మలబద్ధకం</small></div>
-   <div class="treatment-item"> Acidity & Gastric Complaints<br><small>అసిడిటీ మరియు గ్యాస్ట్రిక్ సమస్యలు</small></div>
+    <div class="treatment-item"><span class="lang-en">Constipation</span><span class="lang-te">మలబద్ధకం</span></div>
+    <div class="treatment-item"><span class="lang-en">Acidity & Gastric Complaints</span><span class="lang-te">అసిడిటీ మరియు గ్యాస్ట్రిక్ సమస్యలు</span></div>
 
-    <div class="treatment-item">Migraine & Headache<br><small>మైగ్రేన్ & తలనొప్పి</small></div>
-    <div class="treatment-item">Kidney Stones<br><small>కిడ్నీ రాళ్లు</small></div>
-    <div class="treatment-item">Piles<br><small>పైల్స్ </small></div>
+    <div class="treatment-item"><span class="lang-en">Migraine & Headache</span><span class="lang-te">మైగ్రేన్ & తలనొప్పి</span></div>
+    <div class="treatment-item"><span class="lang-en">Kidney Stones</span><span class="lang-te">కిడ్నీ రాళ్లు</span></div>
+    <div class="treatment-item"><span class="lang-en">Piles</span><span class="lang-te">పైల్స్</span></div>
 
-    <div class="treatment-item">Sleeplessness (Insomnia)<br><small>నిద్రలేమి</small></div>
-    <div class="treatment-item">Anxiety<br><small>ఆందోళన</small></div>
-    <div class="treatment-item">Asthma<br><small>ఆస్తమా</small></div>
+    <div class="treatment-item"><span class="lang-en">Sleeplessness (Insomnia)</span><span class="lang-te">నిద్రలేమి</span></div>
+    <div class="treatment-item"><span class="lang-en">Anxiety</span><span class="lang-te">ఆందోళన</span></div>
+    <div class="treatment-item"><span class="lang-en">Asthma</span><span class="lang-te">ఆస్తమా</span></div>
 
-    <div class="treatment-item">Menstrual Problems<br><small>స్త్రీలలో నెలసరి సమస్యలు</small></div>
-    <div class="treatment-item">P.C.O.D<br><small>పీసీఓడి</small></div>
-    <div class="treatment-item">Anaemia<br><small>రక్తహీనత</small></div>
-    <div class="treatment-item">White Discharge<br><small>వైట్ డిశ్చార్జ్</small></div>
+    <div class="treatment-item"><span class="lang-en">Menstrual Problems</span><span class="lang-te">స్త్రీలలో నెలసరి సమస్యలు</span></div>
+    <div class="treatment-item"><span class="lang-en">P.C.O.D</span><span class="lang-te">పీసీఓడి</span></div>
+    <div class="treatment-item"><span class="lang-en">Anaemia</span><span class="lang-te">రక్తహీనత</span></div>
+    <div class="treatment-item"><span class="lang-en">White Discharge</span><span class="lang-te">వైట్ డిశ్చార్జ్</span></div>
 
-    <div class="treatment-item">Urine Infection<br> <small>యూరిన్ ఇన్ఫెక్షన్</small></div>
-    <div class="treatment-item">Bed Wetting in Children<br><small>పిల్లల్లో మంచం తడపడం (రాత్రిపూట మూత్ర విసర్జన నియంత్రణ లోపం)</small></div>
+    <div class="treatment-item"><span class="lang-en">Urine Infection</span><span class="lang-te">యూరిన్ ఇన్ఫెక్షన్</span></div>
+    <div class="treatment-item"><span class="lang-en">Bed Wetting in Children</span><span class="lang-te">పిల్లల్లో మంచం తడపడం</span></div>
 
-    <div class="treatment-item">Corns<br><small>ఆన కాయలు (కాళ్ల గడ్డలు)</small></div>
+    <div class="treatment-item"><span class="lang-en">Corns</span><span class="lang-te">ఆన కాయలు (కాళ్ల గడ్డలు)</span></div>
 
   </div>
 </section>
 <section class="clinic-gallery">
-  <h2>Our Clinic</h2>
+  <h2>
+    <span class="lang-en">Our Clinic</span>
+    <span class="lang-te">మా క్లినిక్</span>
+  </h2>
   
   <div class="gallery-row">
     <img src="images/phpc.jpeg" alt="Clinic Image 1">
@@ -91,12 +134,117 @@
     <img src="images/Homeo-05.jpg" alt="Clinic Image 4">
   </div>
 </section>
+
+<section id="faq" class="faq">
+    <h2>
+        <span class="lang-en">Frequently Asked Questions (FAQ)</span>
+        <span class="lang-te">తరచుగా అడిగే ప్రశ్నలు</span>
+    </h2>
+
+    <!-- English FAQ Section -->
+    <div id="faq-en" class="faq-content">
+        <div class="faq-item">
+            <h3>What is Homeopathy?</h3>
+            <p>Homeopathy is a natural system of medicine that treats the individual as a whole, focusing on the root cause of the disease.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Are there any side effects?</h3>
+            <p>No, homeopathic medicines are made from natural substances and are safe for all age groups without side effects.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can it be used for chronic diseases?</h3>
+            <p>Yes, it is highly effective for chronic conditions like Migraine, PCOD, Skin allergies, and Joint pains.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I take homeopathy with other medicines?</h3>
+            <p>Yes, but it is recommended to keep a gap of at least 30 minutes between different medications.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Is it safe for children?</h3>
+            <p>Absolutely. Children respond very well to homeopathy, and the sweet pills make it easy for them to take.</p>
+        </div>
+    </div>
+
+    <!-- Telugu FAQ Section -->
+    <div id="faq-te" class="faq-content" style="display: none;">
+        <div class="faq-item">
+            <h3>హోమియోపతి అంటే ఏమిటి?</h3>
+            <p>హోమియోపతి అనేది ఒక సహజ వైద్య విధానం, ఇది వ్యాధి యొక్క మూల కారణాన్ని గుర్తించి, వ్యక్తిని సంపూర్ణంగా నయం చేయడంపై దృష్టి పెడుతుంది.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>దీని వల్ల ఏవైనా సైడ్ ఎఫెక్ట్స్ ఉంటాయా?</h3>
+            <p>లేదు, హోమియోపతి మందులు సహజ సిద్ధమైనవి మరియు ఎటువంటి సైడ్ ఎఫెక్ట్స్ లేకుండా అన్ని వయసుల వారికి సురక్షితమైనవి.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>ఇది దీర్ఘకాలిక వ్యాధులకు ఉపయోగపడుతుందా?</h3>
+            <p>అవును, మైగ్రేన్, పీసీఓడీ, చర్మ అలర్జీలు మరియు కీళ్ల నొప్పుల వంటి దీర్ఘకాలిక వ్యాధులకు ఇది చాలా ప్రభావవంతంగా పనిచేస్తుంది.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>నేను ఇతర మందులతో పాటు హోమియోపతి తీసుకోవచ్చా?</h3>
+            <p>అవును, కానీ వివిధ మందుల మధ్య కనీసం 30 నిమిషాల గ్యాప్ ఉంచాలని సిఫార్సు చేయబడింది.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>ఇది పిల్లలకు సురక్షితమేనా?</h3>
+            <p>ఖచ్చితంగా. పిల్లలు హోమియోపతికి బాగా స్పందిస్తారు మరియు తీపి మాత్రల వల్ల వారు సులభంగా వేసుకోగలుగుతారు.</p>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    function setLanguage(lang) {
+        document.body.className = lang;
+        
+        // Update nav button states
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-te').classList.toggle('active', lang === 'te');
+
+        // Update FAQ visibility
+        const faqEn = document.getElementById('faq-en');
+        const faqTe = document.getElementById('faq-te');
+        if (faqEn && faqTe) {
+            faqEn.style.display = (lang === 'en') ? 'block' : 'none';
+            faqTe.style.display = (lang === 'te') ? 'block' : 'none';
+        }
+        
+        localStorage.setItem('preferredLang', lang);
+    }
+    
+    window.onload = function() {
+        const savedLang = localStorage.getItem('preferredLang') || 'en';
+        setLanguage(savedLang);
+    };
+</script>
+
     <section id="reviews">
-        <h2>What Our Patients Say</h2>
-       <div class="review">⭐⭐⭐⭐⭐ "Excellent service and very professional staff. Highly recommended!"</div>
-       <div class="review">⭐⭐⭐⭐⭐ "Best homeopathy clinic in the area. Great results and caring treatment."</div>
-       <div class="review">⭐⭐⭐⭐⭐ "Very knowledgeable doctors. They take time to understand your health concerns."</div>
-        <p><a href="https://search.google.com/local/writereview?placeid=ChIJ13qlkm6RyzsRyOSORlVgCao" target="_blank">⭐ Rate Us on Google </a></p>
+        <h2>
+            <span class="lang-en">What Our Patients Say</span>
+            <span class="lang-te">మా పేషంట్స్ అభిప్రాయాలు</span>
+        </h2>
+       <div class="review">
+            <span class="lang-en">⭐⭐⭐⭐⭐ "Excellent service and very professional staff. Highly recommended!"</span>
+            <span class="lang-te">⭐⭐⭐⭐⭐ "అద్భుతమైన సేవ మరియు చాలా ప్రొఫెషనల్ సిబ్బంది. ఖచ్చితంగా సిఫార్సు చేస్తున్నాను!"</span>
+       </div>
+       <div class="review">
+            <span class="lang-en">⭐⭐⭐⭐⭐ "Best homeopathy clinic in the area. Great results and caring treatment."</span>
+            <span class="lang-te">⭐⭐⭐⭐⭐ "ఈ ప్రాంతంలోనే ఉత్తమ హోమియోపతి క్లినిక్. గొప్ప ఫలితాలు మరియు శ్రద్ధగల చికిత్స."</span>
+       </div>
+       <div class="review">
+            <span class="lang-en">⭐⭐⭐⭐⭐ "Very knowledgeable doctors. They take time to understand your health concerns."</span>
+            <span class="lang-te">⭐⭐⭐⭐⭐ "చాలా పరిజ్ఞానం ఉన్న వైద్యులు. మీ ఆరోగ్య సమస్యలను అర్థం చేసుకోవడానికి సమయం తీసుకుంటారు."</span>
+       </div>
+        <p><a href="https://search.google.com/local/writereview?placeid=ChIJ13qlkm6RyzsRyOSORlVgCao" target="_blank">
+            <span class="lang-en">⭐ Rate Us on Google</span>
+            <span class="lang-te">⭐ గూగుల్‌లో మాకు రేటింగ్ ఇవ్వండి</span>
+        </a></p>
     </section>
 
     <section id="contact">
@@ -133,32 +281,78 @@
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;"> -->
 
         <!-- <h3>Other Ways to Reach Us</h3> -->
-        <!-- <p><strong>📞 Phone:</strong> <a href="tel:+918125573773">+91 8125573773</a></p> -->
-         <h2>Book Your Consultation Today</h2>
-  <p>Get safe and natural treatment with homeopathy</p>
-  <a href="tel:+918125573773" class="btn-call">📞 Call Now</a>
-        <p><strong>📍 Address:</strong> H.No.12-2-46, 1/A, near Swarnanjali School, opp. Faith Assembly Of God Church, JP Nagar, Babbuguda, Bharat Nagar, Erragadda, Hyderabad, Telangana 500018, India </p>
-        <p><strong>🗺️ Location:</strong> <a href="https://maps.app.goo.gl/PTuce58hZzehBPNk7" target="_blank">Get Directions on Google Maps</a></p>
+         <h2>
+            <span class="lang-en">Book Your Consultation Today</span>
+            <span class="lang-te">అపాయింట్‌మెంట్‌</span>
+         </h2>
+  <p>
+    <span class="lang-en">Get safe and natural treatment with homeopathy</span>
+    <span class="lang-te">హోమియోపతితో సురక్షితమైన మరియు సహజమైన చికిత్స పొందండి</span>
+  </p>
+  <a href="tel:+918125573773" class="btn-call">
+    <span class="lang-en">📞 Call Now</span>
+    <span class="lang-te">📞 కాల్ చేయండి</span>
+  </a>
+        <p><strong>📍 <span class="lang-en">Address:</span><span class="lang-te">చిరునామా:</span></strong> H.No.12-2-46, 1/A, near Swarnanjali School, opp. Faith Assembly Of God Church, JP Nagar, Babbuguda, Bharat Nagar, Erragadda, Hyderabad, Telangana 500018, India </p>
         
-        <h3>Working Hours</h3>
+        <!-- Google Maps Frame -->
+        <div class="map-container">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2878235213695!2d78.43126939999999!3d17.4459695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb916e92a57ad7%3A0x2a096055468eec48!2sPrashanthi%20Homeopathy%20Clinic!5e0!3m2!1sen!2sin!4v1713146440263!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.859829424142!2d78.42369767578028!3d17.466421800522273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb916e92a57ad7%3A0xaa096055468ee4c8!2sPrasanthi%20Homeopathy%20Clinic!5e0!3m2!1sen!2sin!4v1776217475373!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- <p><strong>🗺️ <span class="lang-en">Location:</span><span class="lang-te">స్థానం:</span></strong></p> -->
+        <a href="https://maps.app.goo.gl/PTuce58hZzehBPNk7" target="_blank" class="btn-call" style="margin: 10px 0 20px 0;">
+            <span class="lang-en">Get Directions on Google Maps</span>
+            <span class="lang-te">గూగుల్ మ్యాప్స్‌లో దిశలను పొందండి</span>
+        </a>
+        
+        <h3>
+            <span class="lang-en">Working Hours</span>
+            <span class="lang-te">క్లినిక్ సమయము</span>
+        </h3>
 <div class="hours">
-  <p><strong>Monday, Wednesday – Saturday:</strong> 10:00 am to 1 pm, 6 pm to 8 pm</p>
-  <p><strong>Tuesday:</strong> Closed</p>
-  <p><strong>Sunday:</strong> By appointment only</p>
-  <p><strong>Public Holidays:</strong> By appointment only</p>
+  <p><strong>
+    <span class="lang-en">Monday, Wednesday – Saturday:</span>
+    <span class="lang-te">సోమవారం, బుధవారం – శనివారం:</span>
+  </strong> 
+    <span class="lang-en">10:00 am to 1 pm, 6 pm to 8 pm</span>
+    <span class="lang-te">ఉదయం 10:00 నుండి మధ్యాహ్నం 1 గంటల వరకు, సాయంత్రం 6 నుండి రాత్రి 8 గంటల వరకు</span>
+  </p>
+  <p><strong>
+    <span class="lang-en">Tuesday:</span>
+    <span class="lang-te">మంగళవారం:</span>
+  </strong> 
+    <span class="lang-en">Closed</span>
+    <span class="lang-te">సెలవు</span>
+  </p>
+  <p><strong>
+    <span class="lang-en">Sunday:</span>
+    <span class="lang-te">ఆదివారం:</span>
+  </strong> 
+    <span class="lang-en">By appointment only</span>
+    <span class="lang-te">అపాయింట్‌మెంట్ ద్వారా మాత్రమే</span>
+  </p>
+  <p><strong>
+    <span class="lang-en">Public Holidays:</span>
+    <span class="lang-te">ప్రభుత్వ సెలవు దినాలు:</span>
+  </strong> 
+    <span class="lang-en">By appointment only</span>
+    <span class="lang-te">అపాయింట్‌మెంట్ ద్వారా మాత్రమే</span>
+  </p>
 </div>
     </section>
 <a href="https://wa.me/918125573773?text=Hello%20I%20visited%20your%20website" 
    class="whatsapp-float" 
    target="_blank">
 
-  <span class="tooltip">Chat with us</span>
+  <span class="tooltip"><span class="lang-en">Chat with us</span><span class="lang-te">మాతో చాట్ చేయండి</span></span>
 
   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="35">
 
 </a>
     <footer>
-        <p>&copy; 2026 Prashanthi Homeopathy Clinic. All rights reserved.</p>
+        <p>&copy; 2026 Prashanthi Homeopathy Clinic. <span class="lang-en">All rights reserved.</span><span class="lang-te">అన్ని హక్కులు ప్రత్యేకించబడ్డాయి.</span></p>
     </footer>
 
 </body>
